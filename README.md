@@ -1,30 +1,59 @@
 Automated Web Security Scanner Using Python
-Project description
-An educational desktop application that checks an HTTPS website response for selected security headers and basic CORS response-header configuration.
+
+Project Description
+
+An educational Python desktop application that checks HTTPS website responses for selected security headers and basic CORS response-header configurations.
+
 Features
-HTTPS URL validation
-Checks for five commonly used security headers
-Inspects Access-Control-Allow-Origin and Access-Control-Allow-Credentials response headers
-Displays findings and basic recommendations in a graphical interface
-Technologies
-Python 3
-Tkinter (GUI)
-urllib (HTTP requests)
+
+- HTTPS URL validation
+- Checks five commonly used security headers
+- Inspects "Access-Control-Allow-Origin" and "Access-Control-Allow-Credentials" response headers
+- Displays findings and basic security recommendations through a graphical interface
+
+Technologies Used
+
+- Python 3
+- Tkinter (GUI)
+- urllib (HTTP requests)
+
 Requirements
+
 Python 3 with Tkinter support. No third-party Python packages are required.
-How to run
-Download CyberSecurity_WebScanner.py.
-Open it using Python IDLE or run python CyberSecurity_WebScanner.py in a terminal.
-Enter an HTTPS URL for a website you own or have permission to assess.
-Click Scan Website and review the output.
-Files
-CyberSecurity_WebScanner.py — application source code
-requirements.txt — dependency note
-ProjectReport.docx — project report
-ProjectReport.pdf — PDF copy of the report
-Limitations
-This is a learning prototype, not a complete penetration-testing or security-audit tool. It checks a single HTTP response. Missing headers do not automatically prove a vulnerability, and CORS behavior can depend on request origin, method, and browser enforcement. Results should be interpreted by a knowledgeable reviewer.
-Responsible use
-Only assess websites that you own or are explicitly authorized to test. Do not use this tool to attempt exploitation or bypass access controls.
+
+How to Run
+
+1. Download "CyberSecurity_WebScanner.py".
+
+2. Open the file using Python IDLE or a terminal.
+
+3. Run the following command:
+   
+   python CyberSecurity_WebScanner.py
+
+4. Enter an HTTPS URL for a website you own or have permission to assess.
+
+5. Click Scan Website and review the results.
+
+Project Files
+
+- "CyberSecurity_WebScanner.py" — Application source code
+- "requirements.txt" — Dependency note
+- "ProjectReport.docx" — Project report in Word format
+- "ProjectReport.pdf" — Project report in PDF format
+
 Dataset
-No dataset is required; the application inspects HTTP response headers from the user-provided website at runtime.
+
+No dataset is required. The application inspects HTTP response headers from the user-provided website at runtime.
+
+Limitations
+
+This project is a learning prototype, not a complete penetration-testing or security-audit tool. It checks a single HTTP response. Missing headers do not automatically indicate a vulnerability, and CORS behavior may depend on the request origin, method, and browser enforcement. Results should be reviewed carefully.
+
+Responsible Use
+
+Only assess websites you own or are explicitly authorized to test. Do not use this tool to attempt exploitation or bypass access controls.
+
+Purpose
+
+This project demonstrates the use of Python, GUI development, HTTP requests, and basic web security concepts for educational purposes.
